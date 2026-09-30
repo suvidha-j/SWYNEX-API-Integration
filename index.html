@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SWYNEX | Product Explorer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="brand">
+            <div class="brand-icon">S</div>
+
+            <div>
+                <h2>SWYNEX</h2>
+                <span>Product Explorer</span>
+            </div>
+        </div>
+
+        <div class="api-status">
+            <span class="status-dot"></span>
+            API Connected
+        </div>
+
+    </nav>
+
+
+    <!-- MAIN -->
+    <main class="container">
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">✨ API INTEGRATION</p>
+
+                <h1>
+                    Discover Amazing
+                    <span>Products.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Explore products dynamically fetched from a public API.
+                    Search, filter and discover products easily.
+                </p>
+
+            </div>
+
+            <div class="hero-card">
+
+                <div class="api-icon">⚡</div>
+
+                <h3>Live API Data</h3>
+
+                <p>
+                    Real-time product information
+                    loaded dynamically.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SEARCH / FILTER -->
+        <section class="controls-card">
+
+            <div class="section-title">
+                <div>
+                    <p>PRODUCT LIBRARY</p>
+                    <h2>Find Your Product</h2>
+                </div>
+            </div>
+
+
+            <div class="controls">
+
+                <div class="search-box">
+
+                    <span>🔍</span>
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Search products..."
+                    >
+
+                </div>
+
+
+                <select id="categoryFilter">
+
+                    <option value="all">
+                        All Categories
+                    </option>
+
+                </select>
+
+            </div>
+
+        </section>
+
+
+        <!-- LOADING -->
+        <div id="loading" class="loading">
+
+            <div class="spinner"></div>
+
+            <h3>Loading Products...</h3>
+
+            <p>
+                Fetching the latest products from API
+            </p>
+
+        </div>
+
+
+        <!-- ERROR -->
+        <div id="errorMessage" class="error">
+
+            <div class="error-icon">⚠️</div>
+
+            <h3>Something went wrong</h3>
+
+            <p>
+                Unable to load products. Please try again.
+            </p>
+
+        </div>
+
+
+        <!-- PRODUCTS -->
+        <section
+            id="productGrid"
+            class="product-grid">
+        </section>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-brand">
+            <div class="brand-icon small">S</div>
+            <strong>SWYNEX</strong>
+        </div>
+
+        
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
